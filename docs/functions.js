@@ -1,6 +1,7 @@
 let foto = document.querySelectorAll("img");
 let item = document.querySelectorAll("li");
 let win= document.getElementsByClassName("win")
+let borde= document.getElementsByClassName("borde")
 let compare = [];
 let cont=0
 let fichas=["avocado.png","banana.png","carrot.png","cherries.png","ear-of-corn.png","eggplant.png","grapes.png","hamburger.png","hot-dog.png","hot-pepper.png","kiwi-fruit.png","meat-on-bone.png","mushroom.png","pineapple.png","pizza.png","poultry-leg.png","red-apple.png","strawberry.png","avocado.png","banana.png","carrot.png","cherries.png","ear-of-corn.png","eggplant.png","grapes.png","hamburger.png","hot-dog.png","hot-pepper.png","kiwi-fruit.png","meat-on-bone.png","mushroom.png","pineapple.png","pizza.png","poultry-leg.png","red-apple.png","strawberry.png"]
@@ -42,6 +43,7 @@ item.forEach((it, i) => {
                   if(completed.length===fichas.length){
                      setTimeout(() => {
                         win[0].classList.add("done");                        
+                        borde[0].classList.add("done");                        
                      }, 800);
                   }
             }
