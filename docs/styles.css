@@ -11,8 +11,7 @@ display: block;
 justify-content: center;
 text-align: center;
 background-color: darkgrey;
-max-width: 750px;
-min-width: 80%;
+width: 100vw;
 }
 h1,h2{
    margin-bottom: 10px;
