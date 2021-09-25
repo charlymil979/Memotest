@@ -51,14 +51,14 @@ h1,h2{
 }
 .win{
    z-index: 10;
-   font-size: 10vh;
-   width: 80vw;
-   height: 80vw;
-   display: none;
+   font-size: 10vw;
+   width: 90vw;
+   height: 90vw;
+   /* display: none; */
    flex-direction: column;
    position: fixed;
    margin: auto;
-   background-color: rgb(36, 37, 102);
+   background-color: rgb(255, 181, 121);
    justify-content: center;
    align-items: center;
    text-align: center;
@@ -66,10 +66,10 @@ h1,h2{
    left: 0;
    right: 0;
    bottom: 0;
-   border-left:blue solid 100px;
-   border-top: red solid 100px;
-   border-right: yellow solid 100px;
-   border-bottom: green solid 100px;
+   border-left:blue solid 80px;
+   border-top: red solid 80px;
+   border-right: yellow solid 80px;
+   border-bottom: green solid 80px;
    border-radius: 50%;
 }
 a{
@@ -82,7 +82,7 @@ a{
 
 }
 .a{
-   font-size: 16px;
+   font-size: 3vw;
    color: khaki;
 
 }
