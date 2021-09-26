@@ -67,10 +67,10 @@ h1,h2{
    left: 0;
    right: 0;
    bottom: 0;
-   border-left:rgb(0, 0, 130) solid 80px;
-   border-top: rgb(130, 0, 0) solid 80px;
-   border-right: rgb(130, 130, 0) solid 80px;
-   border-bottom: rgb(0, 92, 0) solid 80px;
+   border-left:rgb(0, 0, 130) solid 10vw;
+   border-top: rgb(130, 0, 0) solid 10vw;
+   border-right: rgb(130, 130, 0) solid 10vw;
+   border-bottom: rgb(0, 92, 0) solid 10vw;
    border-radius: 50%;
 }
 .win{
@@ -80,7 +80,6 @@ h1,h2{
    font-style: italic;
    width: 80vw;
    height: 80vw;
-   /* display: none; */
    flex-direction: column;
    position: fixed;
    margin: auto;
@@ -92,11 +91,26 @@ h1,h2{
    left: 0;
    right: 0;
    bottom: 0;
-   border-left:blue solid 80px;
-   border-top: red solid 80px;
-   border-right: yellow solid 80px;
-   border-bottom: green solid 80px;
+   border-left:blue solid 15vw;
+   border-top: red solid 15vw;
+   border-right: yellow solid 15vw;
+   border-bottom: green solid 15vw;
    border-radius: 50%;
+}
+.win2{
+   width: 51vw;
+   height: 51vw;
+   border-left:rgb(0, 0, 200) solid 5px;
+   border-top: rgb(200, 0, 0) solid 5px;
+   border-right: rgb(200, 200, 0) solid 5px;
+   border-bottom: rgb(0, 110, 0) solid 5px;
+   border-radius: 50%;
+   top:0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: fixed;
+   margin: auto;
 }
 a{
    text-decoration: none;
@@ -134,17 +148,19 @@ a{
    z-index: 8;
    width: 80vh;
    height: 80vh;
-   border-left:rgb(0, 0, 130) solid 5vh;
-   border-top: rgb(130, 0, 0) solid 5vh;
-   border-right: rgb(130, 130, 0) solid 5vh;
-   border-bottom: rgb(0, 92, 0) solid 5vh;
-   border-radius: 50%;
-   }
-   .win{
-   font-size: 5vw;
-   width: 71vh;
-   height: 71vh;
+   border-width: 10vh;
+}
+.win{
+   font-size: 7vh;
+   width: 70vh;
+   height: 70vh;
+   border-width: 15vh;
      
+   }
+   .win2{
+   width: 41vh;
+   height: 41vh;
+   border-width: 1vh;
    }
    .a{
   font-size: 3vh;

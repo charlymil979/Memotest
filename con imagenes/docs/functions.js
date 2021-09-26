@@ -26,35 +26,36 @@ for(i=0;i<fichas.length;i++){
 
 item.forEach((it, i) => {
   item[i].addEventListener("click", () => {
-    let visible = document.getElementsByClassName("active");
-    if (visible.length < 2) {
+     let visible = document.getElementsByClassName("active");
+   if(visible.length<2){
+      console.log(visible.length)
       foto[i].classList.add("active")
-      compare.push(i)
-      compare.push(foto[i].src)
       cont++
       document.getElementsByClassName("toques")[0].textContent =cont;
       document.getElementsByClassName("toques")[1].textContent =cont;
-         if(compare.length>4){compare=[]}
-            if (compare[1] === compare[3]) {
-               if (compare[0] !== compare[2]){
-                  foto[compare[0]].classList.add("fixed")
-                  foto[compare[2]].classList.add("fixed")
-                  let completed=document.getElementsByClassName("fixed")
-                  if(completed.length===fichas.length){
-                     setTimeout(() => {
-                        win[0].classList.add("done");                        
-                        borde[0].classList.add("done");                        
-                     }, 800);
-                  }
-            }
-      else{compare=[]}
-      }
-          } else {
-      foto.forEach((f, i) => {
-        (compare = []), foto[i].classList.remove("active");
-      });
-    }
+      compare.push(i)
+      compare.push(foto[i].src)
+      if(compare.length===4){
+               if ((compare[1] === compare[3])&&(compare[0] !== compare[2])) {
+                     foto[compare[0]].classList.add("fixed")
+                     foto[compare[2]].classList.add("fixed")
+                     let completed=document.getElementsByClassName("fixed")
+                        if(completed.length===fichas.length){
+                           setTimeout(() => {
+                              win[0].classList.add("done");                        
+                              borde[0].classList.add("done");                        
+                           }, 600);
+                        
+               }
+         }
+         compare=[]
+         setTimeout(() => {
+            foto.forEach((it,i)=>{foto[i].classList.remove("active")})
+            }, 400);
+         
+      }     
+   }
   })
-});
+})
 
 
