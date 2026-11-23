@@ -15,8 +15,8 @@ background-color: darkgrey;
 width: 100vw;
 }
 h1,h2{
-   margin-bottom: 10px;
-   margin-top: 10px;
+   margin-bottom: 5px;
+   margin-top: 5px;
 }
 
 .container{
@@ -30,8 +30,8 @@ h1,h2{
    justify-content: center;
    align-items: center;
    text-align: center;
-   width: 13vw;
-   height: 13vw;
+   width: 8vh;
+   height: 8vh;
    background-color:rgba(136, 138, 250, 0.822);
    padding: 2px;
    border-radius:20%;
@@ -166,7 +166,7 @@ a{
 
 }
 .a{
-   font-size: 3vw;
+   font-size: 4vw;
    color: khaki;
 
 }
